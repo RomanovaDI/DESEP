@@ -242,7 +242,7 @@ void mathModel::readVarEqnList(char *fileName)
 					var_len = colon;
 				strncpy(eqnListTag_tmp[eqnListLen], key, var_len);
 				strcpy(eqnList_tmp[eqnListLen++], &str[colon + 1]);
-				if (eqnListLen > eqnListLen)
+				if (eqnListLen > varListLen)
 					DEBUGP(0, FILE_DATA_ERR, "Too many equations. Check \"FinishVarList\" tag.");
 			} else
 				continue;
