@@ -70,6 +70,7 @@ private:
 	void readVarList(char*);
 	void readVarEqnList(char*);
 	void readConstList(char*);
+	void analyzeVarEqnList();
 public:
 	mathModel() {}
 	void readMathModel(char*, int);

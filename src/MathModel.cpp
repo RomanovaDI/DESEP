@@ -260,6 +260,15 @@ void mathModel::readVarEqnList(char *fileName)
 	DEBUGP(1, FUNC_FINISH);
 }
 
+void mathModel::analyzeVarEqnList()
+{
+	DEBUGP(1, FUNC_START);
+	char eqn_tmp[LINELEN];
+	for (int i = 0; i < eqnListLen; i++) {
+		eqnList[i].getRecord(eqn_tmp);
+	}
+}
+
 void mathModel::readConstList(char *fileName)
 {
 	DEBUGP(1, FUNC_START);
